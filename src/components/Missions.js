@@ -6,22 +6,24 @@ import missions from '../data/missions';
 class Missions extends Component {
   render() {
     return (
-      <div data-testid="missions">
+      <section>
         <Title headline="Missões" />
-        {missions.map((objMission) => {
-          const { name, year, country, destination } = objMission;
+        <div data-testid="missions">
+          {missions.map((objMission) => {
+            const { name, year, country, destination } = objMission;
 
-          return (
-            <MissionCard
-              key={ name }
-              name={ name }
-              year={ year }
-              country={ country }
-              destination={ destination }
-            />
-          );
-        })}
-      </div>
+            return (
+              <MissionCard
+                key={ name }
+                name={ name }
+                year={ year }
+                country={ country }
+                destination={ destination }
+              />
+            );
+          })}
+        </div>
+      </section>
     );
   }
 }
