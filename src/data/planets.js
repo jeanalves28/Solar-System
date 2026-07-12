@@ -1,21 +1,19 @@
-import MercurioImg from '../images/Mercurio.png';
-import VenusImg from '../images/Venus.png';
-import TerraImg from '../images/Terra.png';
-import MarteImg from '../images/Marte.png';
 import JupiterImg from '../images/Jupiter.png';
-import SaturnoImg from '../images/Saturno.png';
-import Uranoimg from '../images/Urano.png';
+import MarteImg from '../images/Marte.png';
+import MercurioImg from '../images/Mercurio.png';
 import Netunoimg from '../images/Netuno.png';
+import SaturnoImg from '../images/Saturno.png';
+import TerraImg from '../images/Terra.png';
+import Uranoimg from '../images/Urano.png';
+import VenusImg from '../images/Venus.png';
 
-const Planets = [
-  { name: 'Mercúrio', image: MercurioImg },
-  { name: 'Vênus', image: VenusImg },
-  { name: 'Terra', image: TerraImg },
-  { name: 'Marte', image: MarteImg },
-  { name: 'Júpiter', image: JupiterImg },
-  { name: 'Saturno', image: SaturnoImg },
-  { name: 'Urano', image: Uranoimg },
-  { name: 'Netuno', image: Netunoimg },
+export default [
+	{ name: 'Mercúrio', image: MercurioImg, width: 30 },
+	{ name: 'Vênus', image: VenusImg, width: 60 },
+	{ name: 'Terra', image: TerraImg, width: 60 },
+	{ name: 'Marte', image: MarteImg, width: 45 },
+	{ name: 'Júpiter', image: JupiterImg, width: 200 },
+	{ name: 'Saturno', image: SaturnoImg, width: 170 },
+	{ name: 'Urano', image: Uranoimg, width: 100 },
+	{ name: 'Netuno', image: Netunoimg, width: 90 },
 ];
-
-export default Planets;
