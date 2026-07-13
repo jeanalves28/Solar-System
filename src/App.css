@@ -1,20 +1,21 @@
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 100;
-  src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  src: url("./fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 300;
-  src: url('./fonts/Inter_18pt-Light.ttf') format('truetype');
+  src: url("./fonts/Inter_18pt-Light.ttf") format("truetype");
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -33,11 +34,11 @@ h2 {
 
 #root {
   align-items: center;
-  background: url('./images/background.png') no-repeat 100% 100% / cover;
+  background: url("./images/background.png") no-repeat 100% 100% / cover;
   color: #eff1f4;
   display: flex;
   flex-direction: column;
-  font-family: 'Inter' , sans-serif;
+  font-family: Inter, sans-serif;
   min-height: 100dvh;
   min-width: fit-content;
 }
@@ -48,7 +49,7 @@ h2 {
 
 .section-missions {
   align-items: center;
-  background: rgba(255, 255, 255, 0.09);
+  background: rgb(255 255 255 / 9%);
   border-radius: 1.5rem;
   display: flex;
   flex-flow: column;
@@ -56,7 +57,7 @@ h2 {
   padding: 1.5rem 2rem 2rem;
 }
 
-.App {
+.app {
   text-align: center;
 }
 
@@ -101,7 +102,7 @@ h2 {
 
 .card-mission {
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 50%);
   border: 1px #eff1f4 solid;
   border-radius: 0.6rem;
   display: grid;
@@ -115,7 +116,7 @@ h2 {
   grid-column: span 4;
 }
 
-.card-mission > :nth-child( 2 ) {
+.card-mission > :nth-child(2) {
   border-top: 1px #eff1f4 solid;
   grid-column: span 4;
   position: relative;
@@ -123,12 +124,12 @@ h2 {
   width: calc(100% + 2rem);
 }
 
-.card-mission > :nth-last-child( 2 ) {
+.card-mission > :nth-last-child(2) {
   height: 5rem;
   width: 8rem;
 }
 
-.card-mission > :nth-last-child( -n + 3 ) {
+.card-mission > :nth-last-child(-n + 3) {
   align-items: center;
   column-gap: 0.3rem;
   display: flex;
